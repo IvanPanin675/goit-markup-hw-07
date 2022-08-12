@@ -15,19 +15,22 @@
     position: relative;
     display: block;
     color: var(--Logo-bt-link);
+
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 4px;
+        border-radius: 2px;
+        bottom: -1px;
+        width: 100%;
+
+        background-color: var(--Logo-bt-link);
+    }
 }
 
-.link.current::after {
-    content: '';
-    display: block;
-    position: absolute;
-    height: 4px;
-    border-radius: 2px;
-    bottom: -1px;
-    width: 100%;
 
-    background-color: var(--Logo-bt-link);
-}
 
 .header-conteiner {
     display: flex;
@@ -36,14 +39,11 @@
 }
 
 .logo {
-
-
     color: var(--Logo-bt-link);
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-
 }
 
 .header-conteiner .logo {
@@ -64,20 +64,22 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: var(--Logo-bt-link);
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:active {
+    color: var(--Logo-bt-link);
+}   
 }
 
-.navi:hover,
-.navi:focus,
-.kont:hover,
-.kont:focus {
-    color: var(--Logo-bt-link);
-    fill: var(--Logo-bt-link);
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.navi:active {
-    color: var(--Logo-bt-link);
-}
+
+
 
 .list.flex {
     margin-left: auto;
@@ -105,6 +107,14 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        color: var(--Logo-bt-link);
+        fill: var(--Logo-bt-link);
+        transition: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .kont>svg {

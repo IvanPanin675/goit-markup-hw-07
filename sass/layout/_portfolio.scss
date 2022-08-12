@@ -12,13 +12,20 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.item-sait .link:hover,
-.item-sait .link:focus {
+
+    &:hover,
+    &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 
+    &:hover .text-overlay,
+    &:focus .text-overlay {
+    transform: translatex(0);
 }
+}
+
+
 
 .sait-overlay {
     position: relative;
@@ -45,10 +52,7 @@
     color: #FFFFFF;
 }
 
-.item-sait .link:hover .text-overlay,
-.item-sait .link:focus .text-overlay {
-    transform: translatex(0);
-}
+
 
 .btn.port {
     padding: 6px 22px;
@@ -69,13 +73,16 @@
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover,
+    &:focus {
+        background-color: var(--Logo-bt-link);
+        color: var(--bg-color);
+    }
 }
 
-.btn.port:hover,
-.btn.port:focus {
-    background-color: var(--Logo-bt-link);
-    color: var(--bg-color);
-}
+
 
 .wrap {
     margin-top: 50px;

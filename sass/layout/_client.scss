@@ -6,7 +6,6 @@
 }
 
 
-
 .client-list-link {
     display: flex;
     justify-content: center;
@@ -19,18 +18,20 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-list-link:hover,
-.client-list-link:focus {
-    border-color: var(--Logo-bt-link);
-}
 
 
-.client-list-link:hover .client-list-icon,
-.client-list-link:focus .client-list-icon {
-    fill: var(--Logo-bt-link);
+    &:hover,
+    &:focus {
+        border-color: var(--Logo-bt-link);
+    }
+
+    &:hover .client-list-icon,
+    &:focus .client-list-icon {
+        fill: var(--Logo-bt-link);
+    }
+
 }
+
 
 .client-list-icon {
     justify-content: center;

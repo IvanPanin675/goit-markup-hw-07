@@ -54,17 +54,17 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: var(--Logo-bt-link);
-}
 
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: #ffffff;
+    &:hover,
+    &:focus {
+        background-color: var(--Logo-bt-link);
+    }
+
+    &:hover .social-list-icon,
+    &:focus .social-list-icon {
+        fill: #ffffff;
+    }
 }
 
 .social-list-icon {
