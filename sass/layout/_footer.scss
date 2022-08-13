@@ -27,14 +27,16 @@
     margin-top: 9px;
 }
 
-.item-addr:not(:first-child) {
-    margin-top: 9px;
-}
-
 .link.addr {
     color: rgba(255, 255, 255, 0.6);
-    ;
+    
+    &:not(:first-child) {
+        margin-top: 9px;
+    }
 }
+
+
+
 
 .footer-list {
     display: flex;

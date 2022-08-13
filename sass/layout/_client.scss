@@ -6,7 +6,7 @@
 }
 
 
-.client-list-link {
+.client {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,16 +24,10 @@
     &:focus {
         border-color: var(--Logo-bt-link);
     }
-
-    &:hover .client-list-icon,
-    &:focus .client-list-icon {
-        fill: var(--Logo-bt-link);
-    }
-
 }
 
 
-.client-list-icon {
+.client__icon {
     justify-content: center;
     align-items: center;
     fill: var(--icon);
@@ -41,4 +35,10 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+    .client:hover &,
+    .client:focus & {
+        fill: var(--Logo-bt-link);
+    }
 }
