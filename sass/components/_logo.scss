@@ -1,0 +1,16 @@
+.logo {
+    color: var(--Logo-bt-link);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    & .black {
+        color: black;
+    }
+
+    & .white {
+        color: var(--bg-color)
+    }
+}
+
