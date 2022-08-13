@@ -319,6 +319,14 @@ img {
   margin-top: 30px;
 }
 
+.modal__polityci {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
 .logo {
   color: var(--Logo-bt-link);
   font-family: "Raleway";
